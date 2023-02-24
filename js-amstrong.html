@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Enter a number <input type="text" id="num">
+    <input type="button" onclick="arm()" value="check">
+    <p id="demo"></p>
+    <script>
+        function arm()
+        {    var no=Number(document.getElementById("num").value);
+            var temp,sum=0,rem;
+            temp=no;
+           while(no>0)
+           {
+            rem=no%10;
+            sum=sum+(rem*rem*rem);
+            no=no/10;
+
+           }
+           if(temp==sum)
+           {            
+            alert(sum);
+
+
+              document.getElementById("demo").innerHTML="armstrong number";
+           }
+           else
+           {
+            alert(temp);
+            document.getElementById("demo").innerHTML=" not an  armstrong number";
+
+           }
+        }
+
+    </script>
+</body>
+</html>

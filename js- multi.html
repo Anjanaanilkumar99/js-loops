@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="num" placeholder="enter the no"><br>
+    <input type="number" id="limit" placeholder="enter the limit"><br>
+    <button onclick="mul()">result</button>
+    <p id="demo"> </p>
+    <script>
+function mul()
+{
+ var a=Number(document.getElementById("num").value);
+ var b=Number(document.getElementById("limit").value);
+ var c=document.getElementById("demo");
+
+for(let i=1;i<=limit;i++)
+{
+    alert(i);
+    document.getElementById("demo").innerHTML+=i+"*"+num+"=";
+
+}
+
+}
+</script>
+</body>
+</html>

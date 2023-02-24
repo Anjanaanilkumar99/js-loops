@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   enter a number<input type="text" id="num">
+   <button onclick="palindrome()">result</button> 
+   <p id="demo"></p>
+</body>
+<script>
+    function palindrome()
+    {
+        var n,rem,a;
+        let rslt=0;
+         var n=Number(document.getElementById("num").value);
+
+       var a=n;
+
+        while(n!=0)
+        {
+            rem=n/10;
+            rslt=rslt*10+rem;
+            n=n/10;
+            // alert(rslt);
+
+        }
+            if(rslt == a)
+             {
+
+            document.getElementById("demo").innerHTML="palindrome";
+             }
+            else
+             {
+            document.getElementById("demo").innerHTML=" not palindrome";
+
+             }
+    }
+</script>
+</html>

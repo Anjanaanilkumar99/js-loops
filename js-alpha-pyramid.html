@@ -8,16 +8,17 @@
 <body>
     <script>
         
-         let string="";
-        const alphabet='A';
-        for(let i=1;i<=5;i++)
-        {
-            for(let j=1;j<=i;j++)
-            {
-                string+=alphabet;
-            }
-            ++alphabet;
-            string+="\n";
+  let n = 5;
+let string = "";
+
+for (let i = 1; i <= n; i++) {
+  
+  for (let j = 0; j < i; j++) {
+    string += String.fromCharCode(j + 65);
+  }
+  string += "\n";
+}
+document.write(`<pre>${string}</pre>`);
 
         }
         document.write(`<pre> ${string} </pre>`);
